@@ -1,0 +1,174 @@
+body::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+  }  
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgb(148, 5, 209);
+    border-radius: 5px;
+  }
+  
+
+
+body{
+    background-image: url("./image/starlight_mod.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+    height: 100%;
+    background-color: #000326;
+}
+
+strong{
+    font-size: 18px;
+}
+
+.title{
+    color: aliceblue;
+    text-align: center;
+}
+
+.padding-or{
+    width: 100%;
+    height: 10px;
+}
+
+.title-img{
+    width: 30vw;
+    height: auto;
+}
+
+.interface-container{
+    width: 60vw;
+    margin: auto auto;
+    color: aliceblue;
+    border-radius: 30px;
+}
+
+
+
+.log-reg-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+/*.reg-form{for debuggin display=none , default=flex}*/
+
+/*Messaggio di errore******************************************************/   
+.info-message{/*div fratello di reg-form*/
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   -webkit-backdrop-filter: blur(160px);/*per compatibilità con safari*/
+   backdrop-filter: blur(5px);
+   opacity: 1;
+
+}
+
+.info-interface{ /*figlio info-message, messaggio vero e proprio*/
+    width: 95%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-info,.username-info,.eta-info,.indietro-ctn,.password-info{
+    width: 100%;
+    height: 12%;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.email-info{
+    margin-top: 0px;
+}
+
+.lista{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.indietro-ctn{
+    margin-top: 0px;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    .indietro-img{
+        width: 20px;
+        height: 20px;
+        background-image: url('./image/annulla-64-red.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+.password-info{
+    height: 56%;
+}
+
+.form-reg-container{
+    overflow: hidden;
+}
+/****************************************************************/
+
+
+
+@media screen and (max-width: 845px) {
+    .interface-container {
+        width: fit-content;
+        margin: auto auto;
+        color: aliceblue;
+        border-radius: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .log-reg-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .title-img{
+        width: 50vw;
+        height: auto;
+    }
+    .form-reg-container{
+        margin: 20px;
+    }
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+.slot-container {
+    border:solid;
+    border-radius: 3px;
+    border-color: black;
+    
+}
+
+  /* SMALL devices (laptops/desktops, LESS than 600px) */
+/*non uso media query, perche jo un' altra sezione del sito che gestisce dispositivi con grandezza dello scremo maggiore*/
+
+.slot-machine {
+    display: grid;
+    grid-template:
+         'e s s s t' 
+         'e r r r t' 
+         'e r r r t' 
+         'e r r r t' 
+         'e r r r t' 
+         'e r r r t' 
+         'e d d d t'; 
+     border:solid 1px;
+}
+
+     .grid > div.col1 >div.reel{ grid-area:r; }
+     .lato-sx{ grid-area:s; }
+     .lato-dx{ grid-area:d; }
+     .slot-up{ grid-area:t; }
+     .slot-down{ grid-area:e; }
+
+                
+.slot-down{
+    background-color: rgb(200, 250, 200);
+    border: solid;
+    text-align: center;
+}
+
+.slot-up{
+    background-color: rgb(200, 250, 200);
+    border:solid;
+    text-align: center;
+    font-size: 1em;
+    }
+
+.lato-sx{
+    background-color: rgb(255, 228, 233);
+    border: solid;
+    writing-mode: tb-rl;
+    filter: flipv fliph;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.lato-dx{
+    background-color: rgb(255, 228, 233);
+    border: solid;
+    writing-mode: tb-rl;
+    filter: flipv fliph;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.reel {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border:solid 1px;
+}
+
+
+
+.content { 
+    font-size: var(--reel-size,100px);
+    /*font-weight: bold;
+   /* color: #000;*/
+    font-family: "Segoe UI Emoji", sans-serif;
+    position: absolute;
+    top:0;
+    left:0;
+    color: white;
+}
+
+
+/*
+.content { 
+    font-family: "Segoe UI Emoji", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--size, 2em); /* Imposta la dimensione del carattere dell'emoji utilizzando la variabile CSS --size con un valore predefinito di 2em */
+/*}
+*/
+
+
+.stop-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ff6666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#spin-button {
+    margin-top: 50px;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #66ccff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+#timer{                     /*sostiuiremo con orologio */
+    font-size: 24px;
+    position: fixed; /* Imposta l'elemento come posizionato in modo fisso rispetto alla finestra del browser */
+    top: 0; /* Imposta la distanza dall'alto a 0 */
+    right: 0; /* Imposta la distanza dalla destra a 0 */
+    transform: translate(-100%, 0); /* Sposta l'elemento di -100% della sua larghezza verso sinistra */
+}
+
+/*#timer_display{       ora inutile, ma teniamo l' idea
+                    
+}*/
+
+
+#page_info{
+    font-size: 18px;
+}
+
+
+

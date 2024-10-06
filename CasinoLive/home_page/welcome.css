@@ -1,0 +1,443 @@
+/*scrollbar di default inibilte*/
+
+
+/*scrollbar piccola*/
+.hp-second-ctn::-webkit-scrollbar ,.contact-us-text-area::-webkit-scrollbar{
+  width: 5px;
+}
+  
+/* Track */
+.hp-second-ctn::-webkit-scrollbar-track, .contact-us-text-area::-webkit-scrollbar-track{
+  /*box-shadow: inset 0 0 2px rgb(100, 100, 100);*/
+  border-radius: 5px;
+}  
+/* Handle */
+.hp-second-ctn::-webkit-scrollbar-thumb{
+  background:  rgb(255, 0, 0);
+  border-radius: 5px;
+}
+
+.contact-us-text-area::-webkit-scrollbar-thumb {
+    background:  rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+  
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+body::-webkit-scrollbar-thumb {
+    background: #dcc349;
+    border-radius: 5px;
+}
+
+/***************************************/
+
+
+
+
+
+body{
+    background-image: url("../image/casino-giochi-slot-machine-luce-sfondo-fix.jpg");
+    background-size: cover;
+    background-position: center 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(26 7 2);/*rgba(148, 9, 9, 0.7);*/
+}
+
+
+.home-page-cnt {
+    border: solid;
+    position: relative;
+    width: 74%;
+    height: 85%;
+    -webkit-backdrop-filter: blur(16px);/*per compatibilità con safari*/
+    backdrop-filter: blur(16px);
+    opacity: 1;
+    border-radius: 30px;
+    padding: 10px;
+    overflow: hidden;
+    margin: auto auto;
+}
+
+
+.hp-second-ctn{/*serve solo per regolare la scrollbar*/
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.hp-interface{
+    width: 85%;
+    height: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hp-col1{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+
+.hp-black-jack-cnt{
+    text-align: center;
+    border-radius:10px ;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border: solid;
+    background-color: aliceblue;
+}
+.hp-black-jack-cnt input[type="text"]:hover{
+    box-shadow: 0 0 0 10px inset;
+}
+
+.hp-balck-jack-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    color: aliceblue;
+    background-image: url('../image/glitter-not-trasp.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hp-bj-img{
+    background-image: url(../image/hp-icon-black-jack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+}
+
+
+.hp-ricarica-saldo-container-large-dev{
+    margin-top: 15px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.hp-ricarica-saldo-container-small-dev{
+    height: 30%;
+    margin-bottom: 7px;
+    display: none;
+}
+
+.hp-ricarica-img-btn{
+        height: 70px;
+        width: 70px;
+}
+
+.hp-ricarica-inside-button{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.hp-col-padding{
+    width: 2%;
+    height: 100%;
+}
+
+
+
+.hp-col2{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.hp-slot-machine-interface{
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border: solid;
+    background-color: aliceblue;
+}
+
+
+.hp-slot-machine-cnt input[type="text"]:hover{
+    box-shadow: 0 0 0 10px inset;
+}
+
+.hp-slot-machine-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    color: aliceblue;
+    background-image: url('../image/glitter-not-trasp.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hp-slot-img{
+    background-image: url('../image/hp-slot-machine-casino.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+}
+
+/*
+.hp-user-interface{
+    display: flex;
+    flex-direction: row;
+}*/
+
+.hp-contact-us-container{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    height: 20%;
+    flex-direction: row-reverse;
+}
+
+.hp-contact-us-img-btn{
+        height:70px;
+        width:70px;
+}
+
+.hp-contact-us-inside-button{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.btn-custom {
+    background-color: #4eff07;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 90px;
+    color: #000000;
+    font-size:1.6em;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #00ff0d;
+}
+
+.btn-custom#contact-us-btn{
+    font-size:1.3em;
+}
+
+.btn-invia{
+    background-color: #4eff07;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.btn-invia:hover {
+    background-color: #fff;
+    color: #00ff0d;
+}
+
+.contact-window{
+    width: 100%;
+    height: fit-content;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+
+.contact-us-form{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+
+.text-area-ctn{
+    width: 80%;
+    height: 80%;
+    min-height: 70%;
+    border-radius: 23px;    
+    border: 2px solid;
+    overflow: hidden;
+    min-height: 70%;
+    padding: 4px;
+    margin: 7px auto;
+}
+
+.contact-us-text-area{
+    width: 97%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    overflow: scroll;
+    border: 0px;
+}
+
+
+
+.contact-result{
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    border: 3px solid;
+    border-radius: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+
+
+.message-button-intreface{
+    height: 20%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+.annulla-img-green{
+	height: 100%;
+	width: 100%;
+	background-image: url(../image/annulla-64-green.png);
+	background-repeat: no-repeat;
+	background-size: contain; 
+	background-position: center center;
+}
+
+.annulla-contact-us-button{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border: none;
+}
+
+
+@media only  screen and (max-width: 600px){
+    .home-page-cnt{
+        height: 90%;
+    }
+
+    .hp-black-jack-cnt{
+        height: 70%;
+    }
+    
+    .hp-interface{
+        flex-direction: column;
+        align-items: center;
+        height: 97%;
+    }
+    
+    .hp-col1{
+        width: 80%;
+        align-items: center;
+        justify-content: flex-end;
+        height: 50%;
+    }
+
+    .hp-col2{
+        width: 80%;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50%;
+    }
+
+    .hp-contact-us-container{
+        height: 30%;
+        margin-top: 7px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hp-slot-machine-interface{
+        height: 70%;
+    }
+    
+
+    .hp-ricarica-img-btn {
+        height: 55px;
+        width: 55px;
+    }
+
+    .hp-contact-us-img-btn{
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-custom {
+        height: 60px;
+        font-size:1.3em;
+    }
+    
+
+    .hp-col-padding{
+        width: 100%;
+        height: 2%;
+    }
+
+
+
+}
+
+
+
+@media only  screen and (max-height: 482px){
+
+.home-page-cnt {
+    justify-content: flex-start;
+    }
+}
+
+
+@media only  screen and (max-height: 377px){
+
+ /* Track */
+ .hp-second-ctn::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgb(100, 100, 100);
+}  
+
+}
+
+
+
+

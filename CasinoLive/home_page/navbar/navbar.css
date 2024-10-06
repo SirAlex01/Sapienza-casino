@@ -1,0 +1,143 @@
+.navbar-casino{
+    height: 46px;
+    width: 98%;
+    background-color: #dcc349;
+    display: block;
+    border: solid 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.navCas-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+}
+
+/*col1=email col2=saldo col3=ricarica col4=homepage col5=blackjack col6=slot col7=logout*/
+.navCas-col1,.navCas-col2,.navCas-col3,.navCas-col4,.navCas-col5,.navCas-col6,.navCas-col7{
+    border-right: solid 2px;
+    overflow: hidden;
+}
+
+.navCas-sub-row1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 30%;
+}
+
+.navCas-col1{
+    width: 65%;
+    overflow: scroll;
+    font-weight: bold;
+}
+.navCas-col2{
+    width: 35%;
+    font-weight: bold;
+}
+
+
+
+.navCas-sub-row2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 70%;
+}
+
+.navCas-col3,.navCas-col4,.navCas-col5,.navCas-col6,.navCas-col7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.navCas-col7{
+    border-right: 0px;
+}
+
+
+.nav-ricarica,.nav-home-page,.nav-black-jack,.nav-slot-machine,.nav-log-out{
+    height: 40px;
+    width: 40px;
+}
+
+
+.nav-ricarica{
+    background-image: url("../../image/icon-ricarica.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.nav-home-page{
+    background-image: url("../../image/icon-home.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.nav-black-jack{
+    background-image: url("../../image/icon-black-jack.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.nav-slot-machine{
+    background-image: url("../../image/icon-slot-gladiatore.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.nav-log-out{
+    background-image: url("../../image/icon-log-out.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@media only  screen and (max-width: 700px){
+    .navCas-row{
+        font-size: x-small;
+    }
+}
+
+@media only  screen and (max-width: 520px){
+    .desc-col3,.desc-col4,.desc-col5,.desc-col6,.desc-col7{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width: 340px){
+
+    .navCas-row{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navCas-sub-row1{
+        width: 100%;
+        height: 50%;
+        border-bottom: 2px solid;
+    }
+
+    .navCas-sub-row2{
+        width: 100%;
+        height: 50%;
+    }
+
+    .nav-ricarica,.nav-home-page,.nav-black-jack,.nav-slot-machine,.nav-log-out{
+        height: 27px;
+        width: 27px;
+    }
+    .navCas-col3,.navCas-col4,.navCas-col5,.navCas-col6,.navCas-col7{
+        justify-content: center;
+    }
+}

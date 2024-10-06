@@ -1,0 +1,500 @@
+/*scrollbar grande*/
+.messaggi-di-errore::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+  
+/* Track */
+.messaggi-di-errore::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px grey;*/
+  border-radius: 10px;
+}  
+/* Handle */
+.messaggi-di-errore::-webkit-scrollbar-thumb {
+  background:  rgb(0, 0, 255);
+  border-radius: 10px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+body::-webkit-scrollbar-thumb {
+    background:  rgb(0, 0, 255);
+    border-radius: 5px;
+}
+
+
+/*scrollbar piccola*/
+.com-errore::-webkit-scrollbar, .com-email::-webkit-scrollbar {
+  width: 2px;
+}
+  
+/* Track */
+.com-errore::-webkit-scrollbar-track,.com-email::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px grey;*/
+  border-radius: 5px;
+}  
+/* Handle */
+.com-errore::-webkit-scrollbar-thumb,.com-email::-webkit-scrollbar-thumb {
+  background:  rgb(61, 61, 242);
+  border-radius: 5px;
+}
+
+
+/*prova scrollbar orizzontali 
+.com-orario::-webkit-scrollbar-track-piece:end, .com-orario::-webkit-scrollbar-track-piece:start {
+    background: #f1f1f1;
+}
+  
+.com-orario::-webkit-scrollbar-thumb-piece:end, .com-orario::-webkit-scrollbar-thumb-piece:start {
+    background: #888;
+    border-radius: 5px;
+}
+  */
+
+/********************************************************/
+
+html{
+    touch-action: manipulation; /* importante per evitare il doppio tocco sui dispositivi touch */
+    user-zoom: disabled;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: scroll;
+    background-image: url('../../image/glitter-not-trasp.gif');
+    /*background-image: url('../../image/gif-color.gif');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    background-color: black;
+}
+
+
+.errori-interface{
+    background-color: antiquewhite;
+    width: 80%;
+    border-radius: 30px;
+    height: 90%;
+    border: solid  #dcc349 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info-interface{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.info-table{
+    box-sizing: border-box;
+    border: solid 2px gray;
+    border-radius: 20px;
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-id-ora-email-ctn{
+    box-sizing: border-box;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+.id-info{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: solid 2px;
+    padding-left: 3%;
+    overflow: hidden;
+}
+
+.ora-info{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: solid  2px;
+    padding-left: 3%;
+    overflow: scroll;
+}
+
+.email-info{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: solid 2px;
+    padding-left: 3%;
+    overflow: scroll;
+}
+
+.messaggio-info{
+    box-sizing: border-box;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    overflow: hidden;
+}
+
+.messaggi-di-errore{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    border: 1px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+.comunication{
+    border: solid black;
+    width: 95%;
+    height: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-top: 2px;
+}
+
+.com-id-ora-email-erase-ctn{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.id-erase-ctn{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+    
+    .com-id-num{
+        width: 100%;
+        height: 50%;
+    }
+    .com-erase{
+    width: 100%;
+    height: 50%;
+    }
+    .com-erase-img{
+        width: 35px;
+        height: 35px;
+        background-image: url('../../image/trash-icon.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /*.com-erase-img:hover{
+        background-image: url('../../image/trash-icon2.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }*/
+
+
+.com-orario{
+    box-sizing: border-box;
+    border: solid 2px black;
+    width: 41%;
+    height: 100%;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;  
+    padding: 5px;
+}
+
+
+.com-email{
+    box-sizing: border-box;
+    border: solid 2px black;
+    width: 41%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow: scroll;
+    padding: 5px;
+}
+
+
+.com-errore{
+    box-sizing: border-box;
+    padding: 5px;
+    border: solid 2px black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.nulla-in-db{
+    padding: 5px;
+    font-size: xx-large;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+
+
+@media only  screen and (min-width: 1000px){
+    .com-erase-img{
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media only  screen and (min-width: 800px){
+    .com-erase-img{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media only  screen and (min-width: 650px){
+    .com-erase-img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/*versione devices*/
+@media only  screen and (max-width: 600px){
+
+    /*************info interface****************************/
+    .info-interface{
+        height: 60px;
+        width: 100%;
+    }
+
+    .info-table{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+    }
+    
+    .info-id-ora-email-ctn{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid black 2px ;
+    }
+    
+    .id-info{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ora-info{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .email-info{
+        width: 33.4%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+    }
+    
+    .messaggio-info{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    /********************comunizioni***********************/
+    .comunication{
+        flex-direction: column;
+        height: 100px;
+        margin-top: 4px;
+        width: 93%;
+    }
+
+        
+    .com-id-ora-email-erase-ctn{
+        width: 100%;
+        height: 45%;   
+    }
+
+        .id-erase-ctn{
+            flex-direction: row;
+            width: 20%;
+            height: 100%;
+            border-right: solid black 2px;
+            overflow: scroll;
+        }
+            .com-id-num{
+                height: 100%;
+                width: 50%;
+            }
+            .com-erase{
+                height: 100%;
+                width: 50%;
+            }
+                /*.com-erase-img{
+
+                }*/
+                
+        .com-orario{
+            width: 35%; 
+            height: 100%; 
+            padding:5px;
+            font-size: x-small;
+            justify-content: normal;
+            border:none;
+            border-right:  solid black 2px;
+        }
+        
+        .com-email{
+            width: 45%;
+            height: 100%;
+            padding:5px;
+            overflow: scroll;
+            font-size: small;
+            justify-content: normal;
+            border:none;
+        }
+        
+    .com-errore{
+        width: 100%;
+        height: 55%;
+        padding: 2px;
+        border: solid black 1px;
+        border-radius: 3px;
+    }
+    
+}
+
+
+@media only  screen and (max-width: 400px){
+    .com-erase-img{
+        width: 28px;
+        height: 27px;
+    }
+    .info-interface{
+        font-size: x-small;
+    }
+    .com-orario{
+        align-items: flex-start;
+    }
+    
+}
+
+
+@media only  screen and (max-width: 300px){
+
+    .id-erase-ctn{
+        justify-content: center;
+        align-items: center;
+    }
+    .com-id-num{
+        display: none;
+    }
+    .com-erase{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:238px){
+
+    .com-orario::-webkit-scrollbar {
+        width: 2px;
+    }
+        
+    /* Track */
+    .com-orario::-webkit-scrollbar-track  {
+    /*box-shadow: inset 0 0 5px grey;*/
+         border-radius: 5px;
+    }  
+      /* Handle */
+    .com-orario::-webkit-scrollbar-thumb {
+        background:  rgb(0, 0, 255);
+        border-radius: 5px;
+     }
+      
+}
+
+@media only  screen and (max-width: 180px){
+
+    .info-interface{
+        font-size: xx-small;
+    }
+    .com-erase-img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only  screen and (max-height: 103px){
+
+    .info-table{
+        border: 0px;
+    }
+}

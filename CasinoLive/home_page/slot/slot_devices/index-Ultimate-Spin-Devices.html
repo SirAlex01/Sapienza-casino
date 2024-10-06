@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Slot Machine</title>
+	<link rel="stylesheet" type="text/css" href="style-Ultimate-Spin-Devices.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+    <div id="timer">Timer
+        <div id="timer_display"></div>
+    </div>
+
+    <div id="page_info">Info
+        <div id="info_slot"></div>
+    </div>
+
+	<div class="slot-container">									<!-- div per il contenitore della slot, forse inutile vedremo -->
+		<h1>Slot Machine</h1>
+
+
+
+
+
+        <div name="slot-machine" class="slot-machine">							
+
+            <span class="slot-up">                   <!-- robba per il  BORDO sopra -->
+                <h1>Ultimate SLOT</h1>
+            </span>
+    
+            <span class="lato-dx">
+                <h1>scriita dx</h1>                    <!-- robba per i  BORDI laterali -->
+            </span>
+                                                            
+            <span class="lato-sx">
+                <h1>scritta sx</h1>
+            </span>
+    
+
+			<div class="col1">											<!-- div per la prima colonna di slot -->
+				<div class="reel" id="reel0">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel1">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel2">
+                    <div class="content"></div>
+                </div>
+            </div>
+
+			<div class="col2">	
+                <div class="reel" id="reel3">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel4">
+                    <div class="content"></div>
+                </div>										<!-- div per la seconda colonna di slot -->
+				<div class="reel" id="reel5">
+                    <div class="content"></div>
+                </div>
+			</div>
+
+			<div class="col3">											<!-- div per la terza colonna di slot -->
+				
+				<div class="reel" id="reel6">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel7">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel8">
+                    <div class="content"></div>
+                </div>
+            </div>
+
+            <div class="col4">
+
+                <div class="reel" id="reel9">
+                    <div class="content"></div>
+                </div>
+
+                <div class="reel" id="reel10">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel11">
+                    <div class="content"></div>
+                </div>
+            </div>
+
+            <div class="col5">
+				<div class="reel" id="reel12">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel13">
+                    <div class="content"></div>
+                </div>
+				<div class="reel" id="reel14">
+                    <div class="content"></div>
+                </div>
+			</div>
+
+            <span class="slot-down">                       <!-- robba per il (imm/scritte) BORDo SOTTO -->
+                <h1>fine</h1>
+            </span>
+
+
+		</div>	
+
+
+		<button id="spin-button">Spin</button>			<!-- start the game -->
+		<div id="result"></div>							<!--il risultato lo vogliamo dinamico, con JS andiamo a garficarlo -->			
+    </div>
+
+
+
+	<!-- i bottoni di stop vanno messi perche nelle slot ar bar me pare che poi blocca na colonna e 
+	fa la spinnata, ovviamente pe fallo devi paga qualcosa, i sordi pe gioca so l' ultima cosa che 
+	mettemo tanto  
+
+	quindi per ora pisciati i bottoni de stop, almeno finche uno de noi non se legge come funziona 
+	una particolare slot che vogliamo emulare-->
+
+
+
+	<script src="script-Ultimate-Spin.js"></script>
+</body>
+</html>

@@ -1,0 +1,1281 @@
+/**** suddivisione in sezioni in accordo con html ****/
+
+
+/*scrollbar di default eliminate da html*/
+
+/*scrollbar personalizzate anche nelle media query, le devi lasciare una per una per via dell' inclusione 
+di prevent_defaul, si potrebbe copiare il suo contenuto qua visto il numero assurdo di scrollbar */
+
+.istruzioni-interface::-webkit-scrollbar {
+    width: 3px;
+}
+  
+.istruzioni-interface::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+.istruzioni-interface::-webkit-scrollbar-thumb {
+    background:  #0000ff;
+    border-radius: 5px;
+}
+
+
+.player-cards-ctn::-webkit-scrollbar {
+	width: 2px;
+}
+  
+.player-cards-ctn::-webkit-scrollbar-track {
+	border-radius: 5px;
+}  
+
+.player-cards-ctn::-webkit-scrollbar-thumb {
+	background:  #0000ff;
+	border-radius: 5px;
+}
+
+.info-user::-webkit-scrollbar{
+	width: 2px;
+}
+.info-user::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+} 
+.info-user::-webkit-scrollbar-thumb{
+	background:  #9a0083;
+	border-radius: 5px;
+}
+
+.play-btn::-webkit-scrollbar{
+	width: 2px;
+}
+
+.play-btn::-webkit-scrollbar-track{
+	border-radius: 5px;
+}
+
+.play-btn::-webkit-scrollbar-thumb{
+	background:  rgb(0,0,255);
+	border-radius: 5px;
+}
+
+
+.result-message-ctn::-webkit-scrollbar{
+	width: 2px;
+}
+.result-message-ctn::-webkit-scrollbar-track{
+	border-radius: 5px;
+} 
+.result-message-ctn::-webkit-scrollbar-thumb{
+	background:  rgb(0,0,255);
+	border-radius: 5px;
+}
+
+
+.money-int-scroll::-webkit-scrollbar {
+	width: 2px;
+}
+  
+.money-int-scroll::-webkit-scrollbar-track {
+	border-radius: 5px;
+}  
+
+.money-int-scroll::-webkit-scrollbar-thumb {
+	background:  rgb(0,0,255);
+	border-radius: 5px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(0,0,255);
+    border-radius: 5px;
+}
+
+
+
+
+/************************navbar*************************/
+.navbar-casino{
+	color:#ffffff;
+	/*background-color: #025322;*/
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-log-out{
+    background-image: url("../../image/icon-log-out2.png");
+}
+
+/*****************************************/
+
+
+
+
+/*nelle nostre media query ha priorità l' altezza rispetto al 
+larghezza, si considera inizialmente un sito alto e largo*/
+
+html{
+	background-color: rgb(0, 0, 0);
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../image/falling-stars-night.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+	overflow: scroll;
+	background-color: #000000;
+}
+
+.game-container{
+	background-color: #013415;
+	border:   #dcc349 solid 6px;
+    width: 90%;
+    height: 85%;
+    margin: 2px auto;
+    border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.game-title{
+	width: 100%;
+	height: 5%;
+	font-weight: bold;
+	font-size: larger;
+	font-family: 'Nunito', sans-serif;
+	overflow: hidden;
+	background-color: #a4a821;
+	border-radius: 15px;
+	color:antiquewhite;
+}
+
+.title-background{
+	background-image: url('../../image/glitter-not-trasp.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-user-ctn{
+	border: solid rgb(170, 170, 170) 3px;
+	border-radius: 16px;
+	box-shadow: inset 0 0 5px rgb(255, 255, 255);
+	height: 50%;
+	min-height: 70px;
+	width: 50%;
+	min-width: 140px;
+	overflow: hidden;
+	-webkit-backdrop-filter: blur(5px);/*per compatibilità con safari*/
+    backdrop-filter: blur(5px);
+	display: none; 
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.info-user{
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
+	color: rgb(170, 170, 170);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/***********************************************/
+
+
+.game-interface-area{
+	background-image: url('./images/Black-jack-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: solid;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+	align-items: stretch;
+	width: 100%;
+	height: 73%;
+	color:  #dcc349;
+	border-radius: 10px;
+	overflow: hidden;
+}
+/**/
+
+	.tavolo{
+		width: 80%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		overflow: scroll;
+	}
+
+
+	.player-area{
+		min-height: 132px;
+		height: 39%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;;
+		align-items: stretch;
+		overflow: hidden;
+		padding-right: 3.5px;
+	}
+	
+	.grafica-tavolo{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.player-area-title,.punteggio-player{
+		font-weight: bold;
+		font-size: larger;
+		font-family: 'Nunito', sans-serif;
+		text-align: center;
+	}
+
+	.player-cards-ctn{
+		display: flex;
+		flex-direction: column;
+		overflow: scroll;
+	}
+
+	.player-cards{
+		height: 110px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.player-new-cards{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;	
+	}
+
+
+/***********************************************/
+.game-deck{
+	overflow: hidden;
+    min-height: 100px;
+    height: 20%;
+    border: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.deck-card-restanti{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	font-family: 'Nunito', sans-serif;
+}
+
+.deck-cards{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	align-content: center;
+    justify-content: center;
+	overflow: hidden;
+}
+
+.deck-single-card{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+    width: 25px;
+    height: 35px;
+}
+
+/***********************************************/
+
+
+
+.dealer-area {
+    min-height: 132px;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.grafica-tavolo{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.dealer-area-title,.punteggio-dealer{
+	font-weight: bold;
+    font-size: larger;
+	font-family: 'Nunito', sans-serif;	
+	text-align: center;
+}
+
+.dealer-cards{
+	height: 110px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;	
+	align-items: center;
+    justify-content: center;
+}
+
+
+
+/***********************************************/
+
+
+.user-interface{
+	border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	height: 22%;
+    background-color: #dcc349;
+	width: 100%;
+}
+
+
+
+/**/
+.user-interface-row1 {
+	height: 50%;
+    width: 100%;
+	background-image: url(./images/img_help_btn.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+
+	border: solid;
+    border-radius: 10px;
+}
+
+	/*****************************************/
+	.button-scroll{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.play-btn {
+		height: 100%;
+		background-color: #dcc349;
+		border-radius: 15px;
+		overflow: scroll;
+		/*background-image: url(../../image/border-gif.gif);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;*/
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+
+	}
+	
+	.btn-custom {
+		background-color: #4eff07;
+		border: 1px solid #000000;
+		border-radius: 10px;
+		color: #000000;
+		font-size: x-large;
+		border:solid;
+		padding: 5px;
+	}
+	
+	.btn-custom:hover {
+		background-color: #fff;
+		color: #a4a821;
+	}
+
+	button:disabled{
+		background-color: #f69090;
+	}
+	.fake-disabled{
+		background-color: #f69090;
+	}
+
+	button[id="annullaUltimaChip"]:disabled {
+		background-color: transparent;
+	  }
+
+
+/************************************************************/
+
+.user-interface-row2{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	width: 100%;
+    height: 50%;
+	align-items: stretch;
+	overflow: scroll;
+}
+
+	/***************************************/
+	.result-interface{
+		width: 40%;
+		border: solid #000000;
+		border-radius: 10px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		padding: 0px;
+	}
+	.result-message-ctn{
+		height: 90%;
+		width: 90%;
+		overflow: scroll;
+	}
+	
+
+	.result-interface-message{
+		height: 100%;
+		width: 100%;
+		font-size: large;
+		font-weight: bold;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	/****************************************/
+	/*
+	.history-result{
+		width: 15%;
+		border: solid #000000;
+		border-radius: 5px;
+	}
+
+	.history-table {
+		display: grid;
+		grid-template-rows:  auto auto; /* Definisce due righe di altezza automatica *//*
+		grid-template-columns: 1fr; /* Definisce una colonna che occupa tutto lo spazio *//*
+		width: 100%;
+	}
+
+
+	.history-table-col {
+		overflow: hidden;
+		font-weight: bold;
+		padding: 2px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 2px;
+	}
+	*/
+	/*****************************************/
+
+	.money-interface{
+		width: 20%;
+		border: solid;
+		border-radius: 10px;
+		display: block;
+	}
+
+	.money-int-scroll{
+		font-size: large;
+		font-weight: bold;
+		width: 97%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+ 	   	align-items: center;
+	    justify-content: flex-start;
+		overflow: scroll;
+	}
+
+	.saldo-ctn{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bet-ctn{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.money-interface-saldo-fake{
+		padding: 2px;
+		font-weight: bold;
+	}
+
+	.money-interface-saldo{
+		width: 0%;
+		height: 0%;
+	}
+
+
+	.money-interface-bet{
+		padding: 2px;
+		font-weight: bold;
+	}
+
+
+	/*****************************************/
+
+	.insurance-container{
+		border: solid;
+		border-radius: 10px;
+		width: 40%;
+		overflow:scroll;
+	}
+
+	.insurance-interface{
+		max-height: 100%;
+		width: 100%;
+		font-weight: bold;
+		font-size: 1rem;
+		font-family: 'Nunito', sans-serif;
+		display: flex;
+		flex-direction: row;
+		padding: 3px;
+	}
+
+
+	.ins-place-holder-gif{
+		width: 100%;
+		height: 100%;
+		background-image: url(./images/special-diamond.gif);
+		background-repeat: no-repeat;
+		background-size: contain; 
+		background-position: center center;
+	}
+
+
+/****************************************************/
+
+.card-shadow{
+	width: 75px;
+	height: 105px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.card{
+	width: 70px;
+	height: 100px;
+	box-shadow: 0 0 0 2.5px rgba(255, 255, 255, 0);
+	border-radius: 3px;
+}
+
+.card-image{
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.chip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+}
+
+.chips-ctn-small-devices{
+	overflow: hidden;
+	display: flex;
+    justify-content: center;
+}
+
+.chips-ctn-large-devices{
+	width: 20%;
+	border:black;
+}
+
+.chip-container-verticale{
+	height: 100%;
+	border: #dcc349 solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.chip-container-orizzontale{
+	width: 100%;
+    height: 100%;
+	border: #dcc349 solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.chip-img-btn{
+	height: 16.67%;
+	width: 100%;
+    max-width: 95px;
+    max-height: 95px;
+	background-color: transparent;
+    border: none;
+}
+
+
+.annulla-img-green,.annulla-img-red,.chip1-img,.chip5-img,.chip10-img,.chip50-img,.chip100-img{
+	height: 95%;
+	width: 95%;
+	background-repeat: no-repeat;
+	background-size: contain; 
+	background-position: center center;
+}
+
+.chip1-img{
+    background-image: url(../chips/chip_1.png);
+}
+
+.chip5-img{
+	background-image: url(../chips/chip_5.png);
+}
+
+.chip10-img{
+	background-image: url(../chips/chip_10.png);
+}
+
+.chip50-img{
+	background-image: url(../chips/chip_50.png);
+}
+
+.chip100-img{
+	background-image: url(../chips/chip_100.png);
+}
+
+.annulla-img-red{
+	background-image: url(../../image/annulla-64-red.png);
+}
+
+.annulla-img-green{
+	background-image: url(../../image/annulla-64-green.png);
+}
+
+
+
+
+
+
+.istruzioni-ctn{
+    font-weight: bold;
+    width: 90%;
+    height: 90%;
+    border:solid 6px #dcc349;
+    border-radius: 20px;
+	background-image: url('./images/Black-jack-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+    overflow: hidden;
+    display: none;
+	opacity: 0.975;
+}
+
+
+.istruzioni-interface{
+    height: 99%;
+    width: 99.8%;
+	color: #000000;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	-webkit-backdrop-filter: blur(5px);/*per compatibilità con safari*/
+    backdrop-filter: blur(5px);
+}
+
+
+.close-istruzioni{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.close-istruzioni-btn{
+    width: 40px;
+    height: 40px;
+    background-image: url('../../image/annulla.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.istruzioni-1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-size: larger;
+}
+
+.content-istr1{
+	width: 100%;
+	color: white;
+	border: solid white 2px;
+	border-radius: 15px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.istr-rosso{
+	color: rgb(255, 120, 120);
+}
+.istr-giallo{
+	color: yellow;
+}
+.istr-blu{
+	color: #6363ff;
+}
+.istr-grigio{
+	color: rgb(202, 202, 202);
+}
+.istr-viola{
+	color: rgb(200, 0, 113);
+}
+.istr-verde{
+	color: rgb(108, 251, 134);
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.money-int-scroll{
+		font-size: medium;
+	}
+	.result-interface-message{
+		font-size: medium;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	.btn-custom{
+		padding: 3px;
+		margin: 3px;
+		font-size: larger;
+	}
+}
+
+/*small device Mod*/
+  @media only screen and (max-width: 530px) {
+
+	.deck-single-card{
+		width: 18px;
+		height: 26px;
+	}
+
+	.user-interface{
+		height: 30%;
+	}
+
+	.chip-img-btn{
+		height: 100%;
+		width: 16.67%;
+	}
+
+	.chips-ctn-small-devices {
+		height: 30%;
+		width: 100%;
+	}
+
+	.user-interface-row1{
+		height: 35%;
+		overflow: scroll;
+		background-image: none;
+		border: solid;
+   	    border-radius: 10px;
+	}
+
+	.user-interface-row2{
+		height: 35%;
+	}
+
+	.tavolo {
+		width: 100%;
+	}
+
+	.chips-ctn-large-devices {
+		width: 0%;
+	}
+
+	.money-interface{
+		overflow: scroll;
+		justify-content: flex-start;
+	}
+
+	.result-interface{
+		justify-content: flex-start;
+	}
+	.result-interface-message{
+		align-items: flex-start;
+	}
+
+}
+
+@media only screen and (max-width: 400px) and (max-height:650px){
+	.btn-custom{
+		font-size: large;
+	}
+	.money-int-scroll{
+		font-size: x-small;
+	}
+	.result-interface-message{
+		font-size: small;
+	}
+}
+
+@media only screen and (max-width: 365px){
+
+	.btn-custom{
+		font-size: medium;
+	}
+
+	.player-area-title,.punteggio-player{
+		font-size:  large;
+	}
+	.dealer-area-title,.punteggio-dealer{
+		font-size: large;
+	}
+
+	.money-int-scroll{
+		justify-content: flex-start;
+	}
+
+	/*togliamo lo slot dell' assicurazione*/	
+	.insurance-container{
+		display: none;
+	}
+	.result-interface{
+		width: 70%;
+	}
+	.money-interface{
+		width: 30%;
+	}
+}
+/*altra tipologia di insurance, messa da js*/
+.ins-in-mess-ctn{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: small;
+}
+
+.ins-in-mess-interface{
+	width: 95%;
+	height: 95%;
+	overflow: scroll;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+/*larghezza minore di 250 px*/
+
+@media only screen and (max-width: 350px){
+	.btn-custom{
+		font-size: small;
+		padding :1px;
+	}
+}
+
+@media only screen and (max-width: 290px){
+	.player-area-title,.punteggio-player{
+		font-size:  medium;
+	}
+	.dealer-area-title,.punteggio-dealer{
+		font-size: medium;
+	}
+
+	.btn-custom{
+		font-size: xx-small;
+	}
+	.money-int-scroll{
+		font-size: xx-small;
+	}
+	.result-interface-message{
+		font-size: small;
+	}
+}
+
+@media only screen and (max-width: 210px){
+	.saldo-ctn{
+		display: none;
+	}
+	.desc-punt{
+		display: none;
+	}
+
+	.ins-in-mess-interface{
+		justify-content: flex-start;
+	}
+	.result-interface{
+		width: 82%;
+	}
+	.money-interface{
+		width: 18%;
+	}
+
+	.chip1-img,.chip5-img,.chip10-img,.chip50-img,.chip100-img{
+		width: 13px;
+	}
+	.annulla-img-green,.annulla-img-red{
+		width: 7px;
+	}
+	.player-area-title,.punteggio-player{
+		font-size:  x-small;
+	}
+	.dealer-area-title,.punteggio-dealer{
+		font-size: x-small;
+	}
+}
+
+
+@media only screen and (max-height: 657px){
+
+	.game-title{
+		display:none;
+	}
+	.game-interface-area{
+		height: 78%;
+	}
+}
+
+@media only screen and (max-height: 557px) and (min-width:380px){
+	.btn-custom{
+		font-size: medium;
+	}
+}
+
+
+@media only screen and (max-height: 557px){
+
+	.tavolo::-webkit-scrollbar {
+		width: 5px;
+	}
+	
+	.tavolo::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+	}  
+
+	.tavolo::-webkit-scrollbar-thumb {
+		background:  rgb(0,0,255);
+		border-radius: 10px;
+	}
+
+}
+
+@media only screen and (max-height: 530px) and (max-width:530px){
+
+	.chips-ctn-small-devices {
+		height: 30%;
+		width: 100%;
+	}
+
+	.user-interface-row1{
+		min-height: 35%;
+		overflow: scroll;  
+	}
+
+	.user-interface-row2{
+		height: 35%;
+	}
+
+	.result-interface-message{
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.result-interface{
+		justify-content: flex-start;
+	}
+
+	.money-interface{
+		justify-content: flex-start;
+	}
+
+}
+
+
+@media only screen and (max-height: 450px) and (min-width:341px){
+	.result-interface-message{
+		font-size: small;
+	}
+	.money-int-scroll{
+		font-size: x-small;
+		font-weight: unset;
+	}
+	.btn-custom{
+		font-size: medium;
+		padding: 1px;
+	}
+	.info-user-ctn{
+		font-size: medium;
+	}
+}
+
+
+@media only screen and (max-height: 402px)and (min-width:341px){
+	.btn-custom{
+		font-size: small;
+		padding: 2px;
+	}
+}
+
+@media only screen and (max-height: 402px) {
+
+	.player-cards,.dealer-cards{
+		height: 101px;
+	}
+	.card-shadow{
+		height: 96px;
+		width: 68px;
+	}
+	
+	.card{
+		height: 91px;
+		width: 63px;
+	}
+	.game-interface-area{
+		height: 76%;
+	}
+	.user-interface{
+		height: 24%;
+	}
+
+	body::-webkit-scrollbar {
+		width: 5px;
+	  }
+	  
+	  body::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 5px;
+	}  
+	
+	body::-webkit-scrollbar-thumb {
+		background:  rgb(0,0,255);
+		border-radius: 5px;
+	}
+	.result-interface-message{
+		font-size: x-small;
+	}
+	
+}
+
+@media only screen and (max-height: 350px)and (min-width:341px){
+
+	.btn-custom{
+		font-size:smaller;
+		padding: 1px;
+	}
+
+}
+@media only screen and (max-height: 350px){
+	.info-user-ctn{
+		font-size: medium;
+	}
+	.game-interface-area{
+		height: 74%;
+	}
+	.user-interface{
+		height: 26%;
+	}
+	.player-area,.dealer-area{
+		min-height: 117px;
+	}
+	.player-cards,.dealer-cards{
+		height: 95px;
+	}
+	.card-shadow{
+		height: 90px;
+		width: 62px;
+	}
+	.card{
+		height: 85px;
+		width: 57px;
+	}
+	
+}
+
+
+@media only screen and (max-height: 310px){
+	.btn-custom{
+		padding: 1px;
+		font-size:x-small;
+	}
+}
+
+@media only screen and (max-height: 290px){
+		.result-interface-message{
+		font-size: x-small;
+	}
+
+	.game-interface-area{
+		height: 73%;
+	}
+	.user-interface{
+		height: 27%;
+	}
+
+	.player-area,.dealer-area{
+		min-height: 108px;
+	}
+	.player-cards,.dealer-cards{
+		height: 86px;
+	}
+	.card-shadow{
+		height: 81px;
+		width: 53px;
+	}
+	.card{
+		height: 76px;
+		width: 48px;
+	}
+	
+}
+
+@media only screen and (max-height: 230px) {
+	.btn-custom{
+		padding: 0px;
+		font-size: xx-small;
+	}
+	.game-interface-area{
+		height: 70%;
+	}
+	.user-interface{
+		height: 30%;
+	}
+
+	.player-area,.dealer-area{
+		min-height: 102px;
+	}
+	.player-cards,.dealer-cards{
+		height: 80px;
+	}
+	.card-shadow{
+		height: 75px;
+		width: 47px;
+	}
+	.card{
+		height: 70px;
+		width: 42px;
+	}
+	
+}
+
+@media only screen and (max-height: 185px) {
+
+	.game-interface-area{
+		height: 68%;
+	}
+	.user-interface{
+		height: 32%;
+	}
+}
+
+
+@media only screen and ((max-height: 310px) and(max-width: 310px) ) {
+	/*lo schermo è piccolissimo, va levato tutto, lascimao bottoni 
+	tavolo e chips, che saranno sostituite dal messaggio, per farlo
+	non usiamo codice js, semplicemente il saldo divenbta null il messaggio
+	prende il 100% e si fa a cambio fra chips e messaggio con dispaly:none  e no*/
+
+	.money-interface{
+		display: none;
+	}
+	.user-interface-row2{
+		width: 100%;
+		height: 50%;
+		display: none;
+	}
+	.user-interface-row1{
+		height: 50%;
+	}
+	.chips-ctn-small-devices{
+		height: 50%;
+	}
+}
+
+
+
+/*blocca schermata   non si può giocare ocn queste dimensioni*/
+
+@media only screen and ((max-height: 145px) or (max-width:145px)){
+	.game-title{
+		display: block;
+		height: 100%;
+	}
+
+	.game-interface-area{
+		display: none;
+	}
+
+	.user-interface{
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-height: 130px) and (min-width:175px){
+	.game-title{
+		font-size: xx-large;
+	}
+
+}
+

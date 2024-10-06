@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="signin.css"/>
+    <script src="formValidation.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+     
+    <div class="form-reg-container">
+        <form action="reg.php" method="POST" name="myForm" onSubmit="return validaForm()">
+
+            <div class="reg-form-title">
+                <h1>Registrati!</h1>
+            </div>
+            
+            <div class="reg-email-cnt">                              <!-- ctn=container -->
+                <label for="inputEmail" class="label">Inserire Email:</label><br>
+                <input type="email" name="inputEmail" class="reg-email-txt" required autofocus><br>
+            </div><br>
+           
+            <div class="reg-username-cnt">
+                <label for="inputUsername" class="label">Inserire Username:</label><br>
+                <input type="text" name="inputUsername" class="reg-username-txt" autofocus/>
+            </div>
+
+            <div class="reg-pass-cnt">
+                <label for="inputPassword" class="label">Inserire Password:</label><br>
+                <input type="password" name="inputPassword" class="reg-pass-txt" required>
+            </div>
+            
+            <table class="reg-eta-cnt">
+                <tr class="row-eta">
+                    <td class="col-eta">
+                        <label for="inputEta" class="label">Inserire et&aacute;:</label><br>
+                        <input type="number" name="inputEta" class="reg-eta-number" autofocus/>
+                    </td>
+                    <td class="col-info-eta">
+                        <div class="info_eta">info</div>
+                    </td>
+                </tr>
+            </table>
+    
+
+            <div class="reg-send-btn">
+                <button type="submit" class="btn btn-custom">Sign-in!</button>
+            </div>    
+        </form>
+    </div>
+
+
+
+</body>
+</html>

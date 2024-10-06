@@ -1,0 +1,134 @@
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}  
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(148, 5, 209);
+  border-radius: 5px;
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+
+.form-login-container{
+  background-image: url("../image/small-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height:430px;
+  width: 250px;
+  border: 3px solid;
+  flex-direction: column;
+  color:white;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px inset;
+  filter: brightness(150%);
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:430px;
+  width: 98%;
+}
+.login-form-title{
+  overflow: hidden;
+  text-align: center;
+}
+
+.label{
+  padding-left: 10px;
+}
+
+
+.login-email-cnt{
+  margin:2px;
+  width: 80%;
+  text-align: center;
+}
+
+.login-email-cnt input[type="email"]:hover{
+  box-shadow: 0 0 0 2px inset;
+  background-color: rgb(156, 247, 159);
+}
+
+.login-email-txt{
+  border-color:rgb(255, 0, 0) ;
+  width: 95%;
+  /*height: 4vh;*/height: 23px;
+  border-width: 3px;
+  border-radius: 10px;
+  background-color: rgb(222, 248, 240);
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.login-pass-cnt{
+  text-align: center;
+  margin:2px;
+  width: 80%;
+}
+
+.login-pass-cnt input[type="password"]:hover {
+  box-shadow: 0 0 0 2px inset;
+  background-color: rgb(156, 247, 159);
+}
+
+.login-pass-txt{
+  border-color:rgb(255, 0, 0) ;
+  width: 95%;
+  /*height: 4vh;*/height: 23px;
+  border-width: 3px;
+  border-radius: 10px;
+  background-color: rgb(222, 248, 240);
+  text-align: center;
+}
+
+.check-remember{
+  margin:2px;
+}
+
+
+.login-send-btn{
+  margin: auto auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.btn-custom {
+    background-color: #4eff07;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 30px;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #00ff0d;
+}
+
+
+.img-btn{
+  height: 100px;
+  width: 100px;
+}
+
+

@@ -1,0 +1,110 @@
+<div id="navbarCasino" class="navbar-casino">
+    <div class="navCas-row">
+        <div class="navCas-sub-row1">    
+            <div class="navCas-col1">
+                <div class="desc-col1">Ciao</div>
+                <div id="navEmail"></div>               <!--l' username viene messo sempre qua-->
+            </div>
+
+            <div class="navCas-col2">
+                <div class="desc-col2">Saldo: </div>
+                <div id="navSaldo"></div> 
+            </div>
+        </div>
+        <div class="navCas-sub-row2"> 
+            <div class="navCas-col3">
+                <div class="desc-col3">Ricarica: </div>
+                <div class="nav-ricarica"></div> 
+            </div>
+
+            <div class="navCas-col4">
+                <div class="desc-col4">Home Page:</div>  
+                <div class="nav-home-page"></div> 
+            </div>
+
+            <div class="navCas-col5">
+                <div class="desc-col5">Black Jack </div>
+                <div class="nav-black-jack"></div>   
+            </div>
+
+            <div class="navCas-col6">
+                <div class="desc-col6">Slot Machine</div>
+                <div class="nav-slot-machine" ></div>
+            </div>
+
+            <div class="navCas-col7">
+                <div class="desc-col7">Logout</div>
+                <div class="nav-log-out"></div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+
+
+
+
+
+
+    o senno hai la versione con gli event listner dentro a html,
+    per usarla devi mettere manualmente le src giuste e disattivare l' vent listner
+    che cambiano immagini in navbar.js
+
+
+
+    <div id="navbarCasino" class="navbar-casino">
+        <div class="navCas-row">
+            <div class="navCas-sub-row1">    
+                <div class="navCas-col1">
+                    <div class="desc-col1">Ciao</div>
+                    <div id="navEmail"></div>               <!--l' username viene messo sempre qua-->
+                </div>
+
+                <div class="navCas-col2">
+                    <div class="desc-col2">Saldo: </div>
+                    <div id="navSaldo"></div> 
+                </div>
+            </div>
+            <div class="navCas-sub-row2"> 
+                <div class="navCas-col3">
+                    <div class="desc-col3"
+                    onmouseenter="document.querySelector('.nav-ricarica').src='url(/CasinoLive/image/icon-ricarica.gif)';"
+                    onmouseleave="document.querySelector('.nav-ricarica').src='url(/CasinoLive/image/icon-ricarica.png)';" 
+                    >Ricarica: </div>
+                    <div class="nav-ricarica"></div> 
+                </div>
+
+                <div class="navCas-col4">
+                    <div class="desc-col4"
+                    onmouseenter="document.querySelector('.nav-home-page').src='url(/CasinoLive/image/icon-home.gif)';"
+                    onmouseleave="document.querySelector('.nav-home-page').src='url(/CasinoLive/image/icon-home.png)';" 
+                    >Home Page:</div>  
+                    <div class="nav-home-page"></div> 
+                </div>
+
+                <div class="navCas-col5">
+                    <div class="desc-col5"
+                    onmouseenter="document.querySelector('.nav-black-jack').src=url(/CasinoLive/image/icon-black-jack.gif);"
+                    onmouseleave="document.querySelector('.nav-black-jack').src=url(/CasinoLive/image/icon-black-jack.pgn);"
+                    >Black Jack </div>
+                    <div class="nav-black-jack"></div>   
+                </div>
+
+                <div class="navCas-col6">
+                    <div class="desc-col6"
+                    onmouseenter="document.querySelector('.nav-slot-machine').src='url(/CasinoLive/image/icon-slot-gladiatore.gif)';"
+                    onmouseleave="document.querySelector('.nav-slot-machine').src='url(/CasinoLive/image/icon-slot-gladiatore.png)';"
+                    >Slot Machine</div>
+                    <div class="nav-slot-machine"></div>
+                </div>
+
+                <div class="navCas-col7">
+                    <div class="desc-col7"
+                    onmouseenter="document.querySelector('.nav-log-out').src='url(/CasinoLive/image/icon-log-out.gif)';"
+                    onmouseleave="document.querySelector('.nav-log-out').src='url(/CasinoLive/image/icon-log-out.png)';"
+                    >Logout</div>
+                    <div class="nav-log-out"></div>
+                </div>
+            </div>
+        </div>
+    </div>   

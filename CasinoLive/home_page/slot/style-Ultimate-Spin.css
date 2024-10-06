@@ -1,0 +1,841 @@
+/*scrollbar*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+body::-webkit-scrollbar-thumb {
+    background:  #dcc349;
+    border-radius: 5px;
+}
+
+.istruzioni-interface::-webkit-scrollbar {
+    width: 3px;
+}
+  
+.istruzioni-interface::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}  
+
+.istruzioni-interface::-webkit-scrollbar-thumb {
+    background:  #0000ff;
+    border-radius: 5px;
+}
+
+.info-user::-webkit-scrollbar{
+	width: 2px;
+}
+.info-user::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+} 
+.info-user::-webkit-scrollbar-thumb{
+	background:  #9a0083;
+	border-radius: 5px;
+}
+
+/*navbar*/
+
+.navbar-casino{
+	color:#ffffff;
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.nav-log-out{
+    background-image: url("../../image/icon-log-out2.png");
+}
+
+.nav-black-jack{
+    width: 35px;
+    height: 35px;
+}
+
+/***************************/
+#body{
+    /*background-image: url('background-image.jpg');/*file nella stessa cartella del file css*/
+    background-image: url('../../image/sfondo-roma-caricamento1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    background-color: #000000;
+    overflow: scroll;
+	height: 100vh;
+	width: 100vw;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-img{
+    background-image: url('../../image/sfondo-roma-caricamento1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+    opacity: 0.5;
+    display: none;
+}
+
+.game-container {
+    background-image: url('../../image/roman-empire-sfondo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    border:   #dcc349 solid 6px;
+    margin: 2px auto;
+    border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+.slot-interface{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-user-ctn{
+	border: solid rgb(170, 170, 170) 3px;
+	border-radius: 16px;
+	box-shadow: inset 0 0 5px rgb(255, 255, 255);
+	height: 50%;
+	min-height: 50px;
+	width: 50%;
+	min-width: 100px;
+	overflow: hidden;
+	-webkit-backdrop-filter: blur(5px);/*per compatibilità con safari*/
+    backdrop-filter: blur(5px);
+	display: block; 
+	font-size: x-large;
+	font-weight: bold;
+    display: none;
+}
+
+.info-user{
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
+	color: rgb(170, 170, 170);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.slot-machine {
+    /*background-image: url('../../image/roman-empire-sfondo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;*/
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    grid-template:
+    'c1 c2 c3 c4 c5' 33.33%
+    'c1 c2 c3 c4 c5' 33.34%
+    'c1 c2 c3 c4 c5' 33.33%
+    /20% 20% 20% 20% 20%;
+}
+
+    .slot-col1{ grid-area:c1; }
+    .slot-col2{ grid-area:c2; }
+    .slot-col3{ grid-area:c3; }
+    .slot-col4{ grid-area:c4; }
+    .slot-col5{ grid-area:c5; }
+
+                
+
+.slot-col1,.slot-col2,.slot-col3,.slot-col4,.slot-col5{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.reel-button {
+    padding:0px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color:transparent;
+}
+
+.reel-button:disabled{
+    background-color: transparent;
+    color:transparent;
+}
+
+.reel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content { 
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+
+.content > img {
+    width: 90%;
+    height: 90%;
+}
+
+
+                                    /*game interface*/
+.game-interface{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+                                        /*stop button table*/
+.table-stop-btn{
+    height: 50%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 0 6px #dcc349 ;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.table-stop-btn-row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border:2px   #dcc349;
+    border-collapse:collapse;
+}
+
+
+/*colonne*/
+.table-stop-btn-col1,.table-stop-btn-col2,.table-stop-btn-col3,.table-stop-btn-col4,.table-stop-btn-col5{
+   height: 100%;
+   width: 20%;
+   border-collapse:collapse;
+   border-right:4px solid #dcc349;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.table-stop-btn-col5{
+    border-right:0px;
+}
+
+                                        /*Game table*/
+.second-row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.table-game{
+    height: 100%;
+    width: 50%;
+}
+
+.table-game-row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border:2px  #dcc349;
+    border-collapse:collapse;
+    width:100%;
+    height: 100%;
+}
+
+
+/*colonne*/
+.table-game-result-col{
+    border-collapse:collapse;
+    border-bottom-left-radius:10px ;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {/*messaggio to user*/
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-game-spin-col{
+    height: 100%;
+    width: 20%;
+    border-collapse:collapse;
+    box-shadow: inset 0 0 0 2px #dcc349;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-game-saldo-col{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.saldo-ctn{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+.puntata-ctn{
+    display: flex;
+    flex-direction: row;
+    font-weight:bold ;
+}   
+
+/*chip table*/
+
+.chip-container{
+	width: 55%;
+    height: 98%;
+	border: #dcc349 solid 3px;
+	border-bottom-right-radius:8px;
+    overflow: hidden;
+}
+
+.chip-interface{
+	width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.chip-img-btn,.chip-img-btn-annulla,.chip-img-btn-cambio,.chip-img-btn-auto-spin{
+	height: 100%;
+	width: 12.5%;
+    max-width: 95px;
+    max-height: 95px;
+	background-color: transparent;
+    border: none;
+}
+
+.chip-img-btn:disabled {
+    background-color: transparent;
+    color:transparent;
+}
+
+
+
+.annulla-img-green,.annulla-img-red,.chip1-img,.chip5-img,.chip10-img,.chip50-img,.chip100-img,.auto-spin-img,.change-mode-img{
+	height: 95%;
+	width: 95%;
+	background-repeat: no-repeat;
+	background-size: contain; 
+	background-position: center center;
+    min-width: 10px;
+}
+.auto-spin-img{
+    background-image: url(../../image/auto-spin.png);
+}
+
+.chip1-img{
+    background-image: url(../chips/chip_1.png);
+}
+
+.chip5-img{
+	background-image: url(../chips/chip_5.png);
+}
+
+.chip10-img{
+	background-image: url(../chips/chip_10.png);
+}
+
+.chip50-img{
+	background-image: url(../chips/chip_50.png);
+}
+
+.chip100-img{
+	background-image: url(../chips/chip_100.png);
+}
+
+.annulla-img-red{
+	background-image: url(../../image/annulla-64-red.png);
+}
+
+.annulla-img-green{
+	background-image: url(../../image/annulla-64-green.png);
+}
+
+.change-mode-img{
+    background-image: url(../../image/Static-Mode.png);
+}
+
+
+/*bottoni*/
+.btn-custom-stop {
+    background-color: #dcc349;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+    font-size: xx-large;
+}
+/*.btn-custom-stop:hover {
+    background-color: rgb(139, 138, 138);
+    color: #dcc349 ;
+}*/
+
+.btn-custom {
+    background-color: #4eff07;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+    font-size: xx-large;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #00ff0d;
+}
+
+button:disabled{   
+    background-color: #f69090;
+    color: #000000;
+}
+
+.btn-custom:disabled{
+    background-color: #f69090;
+    color: #000000;
+}
+
+button[id="annullaUltimaChip"]:disabled {
+    background-color: transparent;
+}
+
+
+.symbol-vincenti{
+    background-image: url(../../image/quadrato-vincita.png);
+    background-repeat: no-repeat;
+	background-size: contain; 
+	background-position: center center;
+}
+
+
+
+
+
+
+.istruzioni-ctn{
+    color: #dcc349;
+    font-weight: bold;
+    width: 90%;
+    height: 90%;
+    border:solid 6px #dcc349;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(100px);/*per compatibilità con safari*/
+    backdrop-filter: blur(100px);
+    opacity: 0.95;
+    background-color: rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    display: none;
+}
+
+.close-istruzioni{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.close-istruzioni-btn{
+    width: 40px;
+    height: 40px;
+    background-image: url('../../image/annulla.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.istruzioni-interface{
+    height: 100%;
+    width: 100%;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.istruzioni-1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.istruzioni-bonus{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.istruzioni-2{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.lista-moltiplicatori{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: solid 2px #ffffff;
+    border-radius: 15px;
+}
+
+.img-ctn{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.istr-list-symbol-image1,.istr-list-symbol-image2,.istr-list-symbol-image3,.istr-list-symbol-image4,.istr-list-symbol-image5,.istr-list-symbol-image6,.istr-list-symbol-image7,.istr-list-symbol-image8,.istr-list-symbol-image9,.istr-list-symbol-image10{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    min-width: 10px;
+}
+
+.istr-list-symbol-image1{
+    background-image: url(./symbols/bonus.png);
+}
+.istr-list-symbol-image2{
+    background-image: url(./symbols/wild.png);
+}
+.istr-list-symbol-image3{
+    background-image: url(./symbols/guerriero.png);
+}
+.istr-list-symbol-image4{
+    background-image: url(./symbols/catapulta.png);
+}
+.istr-list-symbol-image5{
+    background-image: url(./symbols/torre.png);
+}
+.istr-list-symbol-image6{
+    background-image: url(./symbols/carro.png);
+}
+.istr-list-symbol-image7{
+    background-image: url(./symbols/scudo.png);
+}
+.istr-list-symbol-image8{
+    background-image: url(./symbols/elmo.png);
+}
+.istr-list-symbol-image9{
+    background-image: url(./symbols/tempio.png);
+}
+.istr-list-symbol-image10{
+    background-image: url(./symbols/tavoletta.png);
+}
+
+.fake-disabled{
+    background-color: #f69090;
+}
+
+
+
+
+
+@media screen and (max-width:1000px){  /*aggiustiamo la gameInterface*/
+    .game-interface{
+        width:100%;
+    }
+
+    .table-stop-btn{
+        height: 30%;
+        width: 100%;
+    }
+
+    .second-row{
+        height: 70%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .table-game{
+        height: 45%;
+        width: 100%;
+    }
+
+    #result {
+        font-size: x-large;
+        flex-direction: row;
+    }
+
+    .table-game-saldo-col{
+        flex-direction: row;
+        font-size: larger;
+    }
+    .table-game-result-col{
+        border-bottom-left-radius: 0px;
+    }
+
+    .chip-container{
+        width: 100%;
+        height: 55%;
+        border: #dcc349 solid 2px;
+        border-bottom-left-radius:8px;
+    }
+
+}
+
+
+@media screen and ((max-height:560px) and (min-width:1000px) ){ 
+    .btn-custom-stop{
+        font-size: larger;
+    }
+}
+
+
+/*aggiustiamo i font size*/
+@media screen and ((max-height:860px) and (max-width:1000px) ){ 
+    .btn-custom-stop{
+        font-size: x-large;
+    }
+}
+
+@media screen and ((max-height:730px) and (min-width:1000px) ){ 
+    .btn-custom-stop{
+        font-size: larger;
+    }
+
+    .btn-custom{
+        font-size: x-large;
+    }
+}
+
+@media screen and ((max-height:730px) and (max-width:1000px) ){ 
+    .btn-custom-stop{
+        font-size: normal;
+    }
+    .btn-custom{
+        font-size: larger;
+    }
+}
+
+
+@media screen and ((max-height:560px) and (max-width:1000px) ){ 
+    .btn-custom-stop{
+        font-size: small;
+    }
+    .btn-custom{
+        font-size: normal;
+    }
+    .table-game-saldo-col{
+        font-size:large;
+    }
+}
+
+@media screen and ((max-height:460px) and (max-width:1000px) ){ 
+
+    .table-game-saldo-col{
+        font-size:medium;
+    }
+}
+
+
+@media screen and (max-width:700px) { 
+    .table-stop-btn{
+        box-shadow: inset 0 0 0 5px #dcc349;
+    }
+    .btn-custom-stop{
+        font-size: small;
+    }
+}
+
+
+
+@media screen and (max-width:690px) { 
+    .saldo-ctn{
+        flex-direction: column;
+    }
+    .puntata-ctn{
+        flex-direction: column;
+    }
+    .btn-custom{
+        font-size: x-large;
+    }
+}
+
+
+@media screen and (max-width:560px) { 
+    .table-stop-btn{
+        box-shadow: inset 0 0 0 4px #dcc349;
+    }
+    .saldo-ctn{
+        font-size: medium;
+    }
+    .puntata-ctn{
+        font-size: medium;
+    }
+    #result{
+        font-size: large;
+    }
+    .btn-custom{
+        font-size: large;
+    }
+    .info-user{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:450px) { 
+    .table-stop-btn{
+        box-shadow: inset 0 0 0 3px #dcc349;
+    }
+    .saldo-ctn{
+        flex-direction: column;
+        font-size: small;
+    }
+    .puntata-ctn{
+        flex-direction: column;
+        font-size: small;
+    }
+    #result{
+        font-size: medium;
+    }
+    .btn-custom{
+        font-size: medium;
+    }
+}
+
+@media only  screen and (max-width: 340px){
+    .nav-black-jack{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:350px) { 
+    .table-stop-btn{
+        box-shadow: inset 0 0 0 2px #dcc349;
+    }
+    .saldo-ctn{
+        flex-direction: column;
+        font-size: x-small;
+    }
+    .puntata-ctn{
+        flex-direction: column;
+        font-size: x-small;
+    }
+    #result{
+        font-size: x-small;
+    }
+    .btn-custom{
+        font-size: small;
+    }
+    .btn-custom-stop{
+        font-size: xx-small;
+    }
+}
+
+@media screen and (max-width:250px) { 
+    .table-stop-btn{
+        box-shadow: inset 0 0 0 1px #dcc349;
+    }
+    #result{
+        font-size: xx-small;
+    }
+    .saldo-ctn{
+        font-size: xx-small;
+    }
+    .puntata-ctn{
+        font-size: xx-small;
+    }
+    .btn-custom{
+        font-size: x-small;
+        padding-left:2px ;
+        padding-right:2px;
+    }
+    .btn-custom-stop{
+        font-size: xx-small;
+        padding-left:1px ;
+        padding-right: 1px;
+    }
+    .table-game-saldo-col{
+        font-size: xx-small;
+        overflow: scroll;
+    }
+    .saldo-ctn{
+        display: none;
+    }
+}
+
+
+@media screen and ( (max-width:250px)  or (max-height:250px)){ 
+    .info-user{
+        font-size:x-small;
+    }
+}
+
+@media screen and (max-width:170px){
+    .table-game-result-col{
+        width: 30%;
+    }
+    .table-game-saldo-col{
+        width: 40%;
+    }
+    .table-game-spin-col{
+        width: 30%;
+    }
+    .chip-interface{
+        max-height: 50px;
+    }
+}
+
+@media screen and ( (max-width:140px)  or (max-height:140px)){ 
+    .info-user-ctn{
+        display:none;
+    }
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>EsercitazioneLab - Pagina di login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+    <script src="./rememberMe.js" type="application/javascript"></script>
+</head>
+<body>
+ 
+    <div class="form-login-container">
+        <form class="login-form" id="myForm" action="login.php" method="POST" onsubmit="alertRmb()">       
+
+            <div class="login-form-title">
+                <h1>Loggati!</h1>
+            </div>
+            
+            <div class="login-email-cnt">                              <!-- ctn=container -->
+                <label for="inputEmail" class="label">Inserire Email:</label><br>
+                <input type="email" name="inputEmail" class="login-email-txt" required autofocus><br>
+            </div><br>
+            
+            <div class="login-pass-cnt">
+                <label for="inputPassword" class="label">Inserire Password:</label><br>
+                <input type="password" name="inputPassword" class="login-pass-txt" required>
+            </div>
+            
+            <div id="divRemember" class="checkbox check-remember">
+                    <input type="checkbox" name="remember" id="rmb" >
+                <label for="rmb">Ricordami</label>
+            </div>
+
+            <div class="login-send-btn">
+                <button type="submit" class="btn btn-custom">Log-in!</button>
+            </div>    
+        </form>
+    </div>
+
+</body>
+</html>

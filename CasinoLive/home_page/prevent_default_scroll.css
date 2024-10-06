@@ -1,0 +1,25 @@
+/********************************* tolgo scrollbar di default*******************/
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+  
+*::-moz-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+*::-ms-scrollbar {
+  width: 0px; /* larghezza della scrollbar per Edge */
+  height: 0px;
+}
+  
+*{	
+  scrollbar-width: none; /*elimina la scrollbar su firefox*/
+  -ms-overflow-style: none; /* Internet Explorer e Edge */
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+  
